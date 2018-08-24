@@ -23,6 +23,8 @@ public class App {
     private static final int PORT = 3000;
     private static final String REQUEST_ROUTE = "api/" + NUMBER_PARAM;
 
+    private static final String STATIC_FILE_LOCATION = "/public";
+
     private final InsightClient insightClient = new NexmoClient(new TokenAuthMethod(KEY, SECRET)).getInsightClient();
     private final ObjectWriter writer = new ObjectMapper().writer();
 
@@ -34,6 +36,7 @@ public class App {
      * Start the Sparkframework Application
      */
     private void start() {
+        Spark.staticFileLocation(STATIC_FILE_LOCATION);
         Spark.port(PORT);
         Spark.get(REQUEST_ROUTE, createRequestRoute());
     }
