@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Caller ID</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Nexmo Caller ID</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+<div class="nav">
+    <div class="inner-nav">
+        <h1>Nexmo Caller ID</h1>
+    </div>
+</div>
+<div class="page">
+    <div class="search">
+        <div class="inner-search">
+            <h1>Enter a phone number</h1>
+            <div class="search-bar">
+                <div class="search-bar-input">
+                    <form>
+                        <input type="text" class="phone-input" id="phone-number" placeholder="+1 123 456 7890"
+                               autofocus>
+                        <button class="form-button" id="look-up"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <p>Searches are performed against the Nexmo Number Insight API</p>
+        </div>
+    </div>
+    <div class="details" hidden></div>
+</div>
+<div class="footer">
+    <div class="inner-footer">
+        <ul>
+            <li><a href="https://nexmo.com">Nexmo</a></li>
+            <li><a href="https://developer.nexmo.com/number-insight/overview">Documentation</a></li>
+        </ul>
+    </div>
+</div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.4.2/cleave.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.4.2/addons/cleave-phone.i18n.js"></script>
+<script src="js/app.js"></script>
 </html>

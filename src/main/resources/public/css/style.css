@@ -1,0 +1,151 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    background-color: #deedf7;
+    font-weight: 200;
+}
+
+form {
+    display: flex;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    margin: .25em;
+}
+
+.inner-nav h1 {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.nav {
+    background-color: #0077c8;
+    color: #eef6fb;
+}
+
+.inner-nav {
+    display: flex;
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+    justify-content: center;
+}
+
+.search {
+    background: #0077c8;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-flow: column;
+}
+
+.details {
+    background: #ffffff;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner-details {
+    text-align: left;
+    border: 1px solid #deedf7;
+    border-radius: 4px;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+
+.inner-details h1 {
+    border-bottom: 1px solid #deedf7;
+}
+
+.output-table {
+    text-align: left;
+}
+
+.output-table .side-heading {
+    font-weight: normal;
+    text-align: left;
+}
+
+.output-table td {
+    padding: 5px;
+}
+
+.inner-search {
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+    padding: 0 5px;
+    color: #eef6fb;
+}
+
+.inner-search h1 {
+    font-weight: 100;
+}
+
+.inner-search p {
+    color: #fcfcfd;
+    font-weight: 100;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    z-index: 50;
+    max-width: 300px;
+}
+
+.search-bar-input {
+    position: relative;
+    z-index: 51;
+    background: #ffffff;
+    display: flex;
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.search-bar-input input {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    padding: .5em 1em;
+    font-weight: 100;
+}
+
+.search-bar-input input:focus, .search-bar-input button:focus {
+    outline: none;
+}
+
+.search-bar-input button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #0077c8;
+}
+
+.inner-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.inner-footer ul a {
+    padding: 1em;
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    color: #717171;
+}
