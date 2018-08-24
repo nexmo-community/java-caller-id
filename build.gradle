@@ -21,6 +21,15 @@ dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
 
+    // Spark Framework
+    compile 'com.sparkjava:spark-core:2.7.2'
+
+    // Nexmo Java Client
+    compile 'com.nexmo:client:latest.release'
+
+    // DotEnv
+    compile 'io.github.cdimascio:java-dotenv:3.1.1'
+
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
