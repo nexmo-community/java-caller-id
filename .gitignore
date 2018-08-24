@@ -27,3 +27,4 @@ bin
 .classpath
 .project
 .vscode
+src/main/resources/.env
