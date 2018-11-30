@@ -25,7 +25,7 @@ dependencies {
     compile 'com.sparkjava:spark-core:2.7.2'
 
     // Nexmo Java Client
-    compile 'com.nexmo:client:latest.release'
+    compile 'com.nexmo:client:3.10.0'
 
     // DotEnv
     compile 'io.github.cdimascio:java-dotenv:3.1.1'
